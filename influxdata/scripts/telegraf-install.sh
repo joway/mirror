@@ -1,4 +1,4 @@
-role=${1:-general}
+role=${ROLE:-general}
 
 url_prefix='http://m.sh.mk/influxdata'
 OS_ID=`awk '/^ID=/' /etc/*-release | awk -F'=' '{ print tolower($2) }' | tr -d '"'`
