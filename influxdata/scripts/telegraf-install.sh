@@ -1,6 +1,7 @@
 role=${ROLE:-general}
 
-url_prefix='http://m.sh.mk/influxdata'
+# url_prefix='http://m.sh.mk/influxdata'
+url_prefix='http://static.joway.wang/mirror/influxdata'
 OS_ID=`awk '/^ID=/' /etc/*-release | awk -F'=' '{ print tolower($2) }' | tr -d '"'`
 echo "os is $OS_ID"
 
